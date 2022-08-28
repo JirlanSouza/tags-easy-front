@@ -1,0 +1,47 @@
+@import "src/assets/styles/theme/variables.scss";
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: $headerHeight;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0.5rem;
+  background: $brandColor;
+  color: $textColor;
+  box-shadow: $shadow3;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: none;
+    padding: 0.1rem;
+    border-radius: .5rem;
+    border: 1px solid rgba($textColor, 0.3);
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(1.4);
+      background: rgba($textPaperColor, 0.2);
+      color: $textColor;
+      box-shadow: $shadow1;
+    }
+
+    transition: $transitionEaseInOut $durationComplex;
+
+    .icon {
+      color: $textColor;
+    }
+  }
+
+
+}

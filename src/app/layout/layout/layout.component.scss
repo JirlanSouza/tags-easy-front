@@ -1,0 +1,12 @@
+@import "src/assets/styles/theme/variables.scss";
+
+:host {
+  width: 100vw;
+  display: flex;
+  padding-top: $headerHeight;
+  user-select: none;
+}
+
+main {
+  flex: 1;
+}

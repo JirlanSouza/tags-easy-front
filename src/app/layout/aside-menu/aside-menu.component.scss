@@ -1,0 +1,18 @@
+@import "src/assets/styles/theme/variables.scss";
+
+aside {
+  width: 4.5rem;
+  height: $appHeight;
+  background: $paperColor;
+  color: $textPaperColor;
+  font-size: 1.1rem;
+  padding: 1rem;
+  padding-left: 1.1rem;
+  box-shadow: $shadow2;
+
+  transition: $transitionEaseInOut $durationComplex;
+
+  &.large {
+    width: 14rem;
+  }
+}

@@ -1,0 +1,12 @@
+<aside class="{{ isLarge ? 'large' : '' }}">
+  <ul>
+    <app-menu-item
+      *ngFor="let item of items"
+      [large]="isLarge"
+      iconName="{{ item.iconName }}"
+      name="{{ item.name }}"
+      class="{{ item.selected ? 'selected' : '' }}"
+      (selectItem)="selectMenuItem(item.id)"
+    ></app-menu-item>
+  </ul>
+</aside>

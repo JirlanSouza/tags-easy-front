@@ -1,0 +1,40 @@
+@import "src/assets/styles/theme/variables.scss";
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.4rem;
+  border-radius: 0.6rem;
+  transition: $transitionEaseInOut 500ms;
+  cursor: pointer;
+
+  margin-bottom: 0.5rem;
+
+  &:hover {
+    background: rgba($textPaperColor, 0.2);
+    color: $brandColor;
+  }
+
+  &.selected {
+    color: $brandColor;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    //color: $brandColor;
+  }
+
+  span.item-name {
+    flex: 1;
+    margin-left: 0.5rem;
+    color: $textPaperColor;
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
+}

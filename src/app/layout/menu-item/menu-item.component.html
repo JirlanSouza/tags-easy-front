@@ -1,0 +1,6 @@
+<span class="icon" (click)="selectItem.emit()">
+  <i-feather name="{{ iconName }}"></i-feather>
+</span>
+<span class="item-name" *ngIf="large" (click)="selectItem.emit()">{{
+  name
+}}</span>
